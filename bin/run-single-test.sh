@@ -67,7 +67,6 @@ fi
 
 export LOGDIR_RESULTS=$LOGDIR_TOPLEVEL/logs
 mkdir logs
-setup_dirs
 save_rc run_bench 2>&1 | tee /tmp/mmtests-$$.log
 mv /tmp/mmtests-$$.log $LOGDIR_RESULTS/mmtests.log
 recover_rc
